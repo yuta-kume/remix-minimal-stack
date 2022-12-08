@@ -5,7 +5,9 @@
     "build": "remix build",
     "dev": "remix dev",
     "start": "remix-serve build",
-    "typecheck": "tsc -b"
+    "typecheck": "tsc -b",
+    "format": "prettier --check ./{app,tests}/**/*.{ts,tsx}",
+    "format-run": "npx prettier --write ./{app,tests}/**/*.{ts,tsx}"
   },
   "dependencies": {
     "@remix-run/node": "^1.8.2",
@@ -21,6 +23,7 @@
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
     "eslint": "^8.27.0",
+    "prettier": "^2.8.1",
     "typescript": "^4.8.4"
   },
   "engines": {
