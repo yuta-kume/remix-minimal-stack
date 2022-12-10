@@ -15,5 +15,5 @@ export default VitestConfig.defineConfig({
       "~": path.resolve(__dirname, "app"),
     },
   },
-  plugins: react(),
+  plugins: [react()],
 });
