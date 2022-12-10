@@ -16,7 +16,7 @@
     "@remix-run/node": "^1.8.2",
     "@remix-run/react": "^1.8.2",
     "@remix-run/serve": "^1.8.2",
-    "@vitejs/plugin-react": "^3.0.0",
+    "@vitejs/plugin-react": "^2.2.0",
     "isbot": "^3.6.5",
     "jsdom": "^20.0.3",
     "react": "^18.2.0",
