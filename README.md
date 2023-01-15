@@ -1,6 +1,30 @@
-# Welcome to Remix!
+# Remix Minimal Stack!
 
-- [Remix Docs](https://remix.run/docs)
+最小限の構成にした Remix プロジェクトです。
+
+# Dependencies
+
+| package               | version |
+| --------------------- | ------- |
+| remix                 | 1.8.2   |
+| react                 | 18.2.0  |
+| typescript            | 4.8.4   |
+| eslint                | 8.29.0  |
+| prettier              | 2.8.1   |
+| vitest                | 0.25.6  |
+| react-testing-library | 13.4.0  |
+
+# Use technology
+
+- [Remix](https://remix.run/docs)
+- [TypeScript](https://www.typescriptlang.org/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+- [Vitest](https://vitest.dev/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [GitHub Actions](https://docs.github.com/ja/actions)
+
+# How to use
 
 ## Development
 
@@ -9,8 +33,6 @@ From your terminal:
 ```sh
 npm run dev
 ```
-
-This starts your app in development mode, rebuilding assets on file changes.
 
 ## Deployment
 
@@ -24,30 +46,4 @@ Then run the app in production mode:
 
 ```sh
 npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
-
-### Using a Template
-
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
-
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
 ```
